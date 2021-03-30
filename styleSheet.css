@@ -1,0 +1,17 @@
+:root{
+    --mainBGColor: red;
+    --overalFontSize: 24px
+}
+
+html{
+    font-size: var(--overalFontSize);
+}
+
+body{
+    margin: 0px;
+}
+
+section
+{
+    background-color: var(--mainBGColor);
+}
