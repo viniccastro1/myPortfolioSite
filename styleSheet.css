@@ -1,5 +1,5 @@
 :root{
-    --mainBGColor: red;
+    --mainBGColor: white;
     --overalFontSize: 24px
 }
 
@@ -7,11 +7,40 @@ html{
     font-size: var(--overalFontSize);
 }
 
+h1{
+    text-align: center;
+}
+
 body{
     margin: 0px;
 }
 
-section
+/*Toda section será um flex container*/
+.flexContainer, .nav
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
     background-color: var(--mainBGColor);
 }
+
+.flexItem{
+
+}
+
+.navLi{
+    list-style: none;
+}
+.navLiElements{
+    list-style: none;
+    display: inline;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
