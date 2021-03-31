@@ -1,46 +1,87 @@
 :root{
-    --mainBGColor: white;
-    --overalFontSize: 24px
+    --bgColor: white;
+    --fontColor: black;
+    --overallFontSize: 24px;
 }
 
 html{
-    font-size: var(--overalFontSize);
-}
+    font-size: var(--overallFontSize);
 
-h1{
-    text-align: center;
 }
 
 body{
     margin: 0px;
 }
 
-/*Toda section será um flex container*/
-.flexContainer, .nav
-{
+header{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 12em
+}
+
+h1{
+    text-align: center;
+    font-size:4em;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-
-    background-color: var(--mainBGColor);
-}
-
-.flexItem{
-
-}
-
-.navLi{
+    justify-content: center;
     list-style: none;
 }
-.navLiElements{
+
+.navButtonHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-    display: inline;
+    padding: 0px;
 }
 
-@media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
+.navButton{
+    text-align: center;
+    vertical-align: center;
+    width: 6.5em;
+    height: 2em;
+    margin: 10px 2px 10px 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding-top: 15px;
+
+    
+}
+
+.navButton > a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--fontColor);
+}
+
+.navButton:hover, .navButton:hover > a{
+    background-color: black;
+    color: white;
   }
+
+@media (max-width: 600px){
+
+    header{
+        height: 6em;
+    }
+
+    h1{
+        font-size: 2em;
+        font-stretch: condensed;
+    }
+
+    .navButton{
+        height: 1.5em;
+        padding-top: 5px;
+        margin-bottom: 1px;
+        width: 5em;
+    }
+}
