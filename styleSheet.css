@@ -65,9 +65,17 @@ body{
 
 .aboutMeElement{
     background-color: white;
-    width: 200px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.aboutMeIcon{
+    align-self: flex-end;
+    max-height: 450px;
+}
 
 /*Resizing config*/
 @media (max-width: 600px)
