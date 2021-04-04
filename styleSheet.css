@@ -62,6 +62,7 @@ body{
 
 #footer{
     grid-column: 1/3;
+    height: 100px;
 }
 
 /*About me section*/
@@ -109,7 +110,28 @@ body{
     width: 100%;
 }
 
-/*Resizing config*/
+/*Aside*/
+#aside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: start;
+}
+
+.asideIconDiv{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+
+    
+}
+.asideIcon{
+    height: 100%;
+    width: 100%;
+}
+/*Responsive (resizing) config*/
 @media (max-width: 600px)
 {
     #main{
@@ -118,6 +140,8 @@ body{
 
     #aside{
         grid-column: 1/3;
+        flex-direction: row;
+        justify-content: space-evenly;
 
    }
 
