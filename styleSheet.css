@@ -100,9 +100,12 @@ section{
 
 #contactForm{
     background-color:var(--color5);
-    background-image: linear-gradient(to right, var(--color5), var(--color6));
+    
 
-    padding: 1em;
+    border: 2px solid var(--color6);
+    border-radius: 25px;
+
+    padding: 2em;
     margin-left: 2em;
     width: 60%;
 
@@ -123,7 +126,11 @@ section{
 
 #submitButton{
     width: 20%;
-    font-size: 22px;
+    height: 3em;
+}
+
+#submitButton:hover{
+    background:var(--color7);
 }
 
 #aside{
@@ -171,7 +178,7 @@ section{
     gap: 2px;
 
     margin-left: 2em;
-    width: 65%;
+    width: 90%;
 }
 
 #highlightImg{
