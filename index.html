@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleSheet.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,14 +17,14 @@
     <div class="gridContainer">
         <!-- Header -->
         <div class="gridElement" id="header"> 
-            <h1>Place holder</h1>
+            <h1>&gtVinCastro.dev</h1>
         </div>
         <!-- Main -->
         <div class="gridElement" id="main">
 
             <!-- About me section -->
             <section class="aboutMeSection">
-                <h2>Sobre mim</h2>
+                <h2> &gtSobre mim</h2>
                 <div class="flexContainer" id="aboutMeContainer">
                     <div class="aboutMeElement">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae facere minima omnis sunt perferendis obcaecati ipsum optio sapiente. Reiciendis, eum expedita? Voluptatum quo commodi voluptas at, porro consequatur quis consequuntur?</p>
@@ -45,15 +48,15 @@
             </section>
 
             <!-- My work section -->
-            <section> 
-                <h2>O que eu faço</h2>
+            <section id="myWorkSection"> 
+                <h2>&gtO que eu faço</h2>
                 <div class="gridGallery">
                     <div class="gridGalleryElement" id="highlightImg"> 
                         <img src="media\gallery\img1.jpg" alt="" class="imgFromGallery"> 
                     </div>
 
                     <div class="gridGalleryElement"> 
-                        <img src="media\gallery\img2.png" alt="" class="imgFromGallery"> 
+                        <img src="media\gallery\img5.jpg" alt="" class="imgFromGallery"> 
                     </div>
 
                     <div class="gridGalleryElement"> 
@@ -71,18 +74,23 @@
                 </div>
             </section>
 
+            <!-- Contact section -->
             <section>
-                <h2>Fale comigo</h2>
-                <form>
-                    <label for="fname">Nome:</label><br>
+                <h2> &gtFale comigo</h2>
+                <form id="contactForm">
+                    <label for="fname">Nome</label><br>
                     <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Sobrenome:</label><br>
+
+                    <label for="lname">Sobrenome</label><br>
                     <input type="text" id="lname" name="lname"><br>
-                    <label for="lname">E-mail:</label><br>
+
+                    <label for="lname">E-mail</label><br>
                     <input type="text" id="email" name="email"><br>
-                    <label for="lname">Fale aqui:</label><br>
+
+                    <label for="lname">Fale aqui</label><br>
                     <textarea name="message" rows="10" cols="30"> </textarea><br>
-                    <input type="submit">
+
+                    <input type="submit" id="submitButton">
                   </form>
             </section>
 
@@ -102,7 +110,7 @@
                 <img src="media\placeHolderIcon2.png" alt="" class="asideIcon">
             </div>
 
-        </div>
+        </div> 
 
         <!-- Footer -->
         <div class="gridElement" id="footer">
