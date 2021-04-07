@@ -44,7 +44,7 @@ h2{
     color: var(--color4);
 }
 
-/*Grid Config*/
+/*Overall Grid Config*/
 .gridContainer{
     display: grid;
     grid-template-columns: auto auto;
@@ -57,7 +57,7 @@ h2{
     margin-left: 20px;
 }
 
-/*Flex Config*/
+/*Overall Flex Config*/
 .flexContainer{
     display: flex;
     flex-wrap: wrap;    
@@ -77,7 +77,6 @@ h2{
     background-color: var(--color5);
 
     text-align: center;
-
 }
 
 
@@ -96,58 +95,6 @@ section{
 
     box-shadow: 1em 1em black;
     
-}
-
-.contactForm{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    background-color:var(--color5);
-
-    border: 2px solid var(--color6);
-    border-radius: 25px;
-
-    padding: 2em;
-    margin-left: 2em;
-    width: 60%;
-}
-
-.formLabel{
-}
-
-.formTxtIpt {
-    width: 100%;
-    resize: none;
-
-    margin-bottom: 1em;
-
-    border: 2px solid var(--color6);
-    border-radius: 8px;
-
-    color: var(--color5);
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.formSubmit{
-    width: 6em;
-    height: 3em;
-
-    font-weight: bold;
-    font-size: 1em;
-    color: var(--color5);
-
-    border: 2px solid var(--color6);
-    border-radius: 8px;
-}
-
-.formSubmit{
-    align-self: flex-end;
-}
-
-.formSubmit:hover{
-    background:var(--color7);
 }
 
 #aside{
@@ -185,10 +132,6 @@ section{
 }
 
 /*My work section*/
-.myWorkSection{
-
-}
-
 .gridGallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -207,6 +150,56 @@ section{
     height: 100%;
     width: 100%;
 }
+
+/*Contact section*/
+.contactForm{
+    display: flex;
+    flex-direction: column;
+
+    background-color:var(--color5);
+
+    border: 2px solid var(--color6);
+    border-radius: 25px;
+
+    padding: 2em;
+    margin-left: 2em;
+    width: 60%;
+}
+
+.formTxtIpt {
+    width: 100%;
+    resize: none;
+
+    margin-bottom: 1em;
+
+    border: 2px solid var(--color6);
+    border-radius: 8px;
+
+    color: var(--color5);
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.formSubmit{
+    width: 6em;
+    height: 3em;
+
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--color5);
+
+    border: 2px solid var(--color6);
+    border-radius: 8px;
+}
+
+.formSubmit{
+    align-self: flex-end;
+}
+
+.formSubmit:hover{
+    background:var(--color7);
+}
+
 
 /*Aside*/
 #aside{
