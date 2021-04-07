@@ -225,16 +225,22 @@ section{
 /*Responsive (resizing) config*/
 @media (max-width: 600px)
 {
+
     #main{
         grid-column: 1/3;
     }
+
 
     #aside{
         grid-column: 1/3;
         flex-direction: row;
         justify-content: space-evenly;
-
    }
+
+
+   .aboutMeElement{
+    width: 75%;
+    }
 
    .gridGallery{
         width: 100%;
@@ -242,4 +248,10 @@ section{
    .gridGalleryElement{
        grid-column: 1/4;
    }
+
+   .contactForm{
+    width: 100%;
+}
+
+
 }
