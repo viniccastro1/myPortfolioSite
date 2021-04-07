@@ -149,6 +149,12 @@ section{
 .imgFromGallery{
     height: 100%;
     width: 100%;
+
+}
+
+.imgFromGallery:hover{
+    transform: scale(1.05, 1.05);
+    border: 1px solid black;
 }
 
 /*Contact section*/
@@ -197,7 +203,7 @@ section{
 }
 
 .formSubmit:hover{
-    background:var(--color7);
+    opacity: 0.5;
 }
 
 
@@ -209,6 +215,8 @@ section{
 
     align-items: left;
     justify-content: start;
+
+    padding-top: 3em;
 }
 
 .asideIconDiv{
@@ -241,11 +249,17 @@ section{
         grid-column: 1/3;
         flex-direction: row;
         justify-content: space-evenly;
+
+        padding-top: 0;
    }
 
 
    .aboutMeElement{
-    width: 75%;
+    width: 90%;
+    }
+
+    .aboutMeIcon{
+        margin-bottom: 2em;
     }
 
    .gridGallery{
