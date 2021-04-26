@@ -1,5 +1,5 @@
 .modal {
-    /*display: none; /*Hidden by default*/
+    display: none; /*Hidden by default*/
 
     position: fixed;
     left: 0;
@@ -30,6 +30,7 @@
     background-color: var(--color5);
     height: 100%;
     padding: 1em;
+    padding-bottom: 0em;
     text-align: center;
 
     display: flex;

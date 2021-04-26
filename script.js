@@ -1,15 +1,22 @@
 "use strict";
 
-//CONTACT SECTION FORM INTERACTION
-
 var contactSec = document.getElementById("contactSection");
+var formModal = document.getElementById("modal");
+var formModalBtn = document.getElementById("modalButton");
 
-function contactSecClick()
+function showModal()
 {
-    contactSec.innerHTML = "a";
+    console.log("Kawabanga!");
+    formModal.style.display = "block";
 }
 
-contactSec.addEventListener("click", contactSecClick);
+function closeModal()
+{
+    formModal.style.display = "none";
+}
+
+contactSec.addEventListener("click", showModal);
+formModalBtn.addEventListener("click", closeModal);
 
 
 
