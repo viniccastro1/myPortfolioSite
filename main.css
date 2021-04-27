@@ -1,5 +1,6 @@
-/*Site color palette*/
+
 :root{
+    /*Site color palette*/
     --color1: #260080;
     --color2: #8B008B;
     --color3: #990033;
@@ -7,7 +8,9 @@
     --color5: #111115;
     --color6: #1b1b22;
     --color7: #ffffff;
-    /*af1bd*/
+    
+    /*Img gallery: img size*/
+    --imgSize: 13em;
 }
 
 /*Overall Config/Reset*/
@@ -142,8 +145,13 @@ section{
     width: 90%;
 }
 
+.gridGalleryElement{
+    height: var(--imgSize);
+}
+
 #highlightImg{
     grid-row: 1/3;
+    height: var(--imgSize)*2;
 }
 
 .imgFromGallery{

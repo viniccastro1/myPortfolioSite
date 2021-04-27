@@ -1,0 +1,91 @@
+/*Overall Modal Config*/
+.modal{
+    display: none; /*Hidden by default*/
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%; 
+    height: 100%; 
+
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); /*Darker effect on the website*/
+}
+
+  .modalWindow{
+    display: flex;
+    flex-direction: column;
+
+    background-image: linear-gradient(to right, var(--color1), var(--color3));
+
+    height: 300px;
+    width: 600px;
+
+    padding-top: 1em;
+    padding-bottom: 2em;
+
+    margin: auto;
+
+    border-radius: 15px;
+  }
+
+  .modalContent{
+    background-color: var(--color5);
+    height: 100%;
+    padding: 1em;
+    padding-bottom: 0em;
+    text-align: center;
+  }
+
+  .modalCloseBtn{
+    align-self: flex-end;
+
+    width: 1.5em;
+
+    font-size: 2em;
+
+    background-color: var(--color5);
+    color: var(--color4);
+
+    padding: 0;
+    border: none;
+    background: none;
+
+    border-radius: 0;
+  }
+
+  .modalCloseBtn:hover{
+    opacity: 50%;
+  }
+
+  /*Form warn*/
+  #fwModalWindow
+  {
+    height: 300px;
+    width: 600px;
+  }
+
+  /*Img gallery*/
+  #glyModalWindow
+  {
+    height: 500px;
+    width: 800px;
+  }
+
+  #glyModal{
+    display: none;
+  }
+
+
+  /*Respon.*/
+  @media (max-width: 600px){
+    .modalContent{
+       width: 100%;
+       height: 550px;
+    }
+
+    .modalButton{
+      font-size: 1.5em;
+    }
+}

@@ -1,33 +1,48 @@
 "use strict";
 
+//Form warn
 var contactSec = document.getElementById("contactSection");
-var formModal = document.getElementById("modal");
-var formModalBtn = document.getElementById("modalButton");
+var formModal = document.getElementById("fwModal");
+var formModalBtn = document.getElementById("fwModalButton");
 
-function showModal()
-{
-    console.log("Kawabanga!");
+function showFormWarn(){
     formModal.style.display = "block";
 }
-
-function closeModal()
-{
+function closeFormWarn(){
     formModal.style.display = "none";
 }
 
-contactSec.addEventListener("click", showModal);
-formModalBtn.addEventListener("click", closeModal);
+contactSec.addEventListener("click", showFormWarn);
+formModalBtn.addEventListener("click", closeFormWarn);
 
 
+//Image gallery
+var galleryImg = document.getElementsByClassName("imgFromGallery");
+var galleryModal = document.getElementById("glyModal");
+var galleryModalBtn = document.getElementById("glyModalButton");
 
-//LOG TESTS
-var cat = { name :  "Ruby",
-            age  :  4,
-            color:  "black",
-            meow :  function () 
-            {
-                console.log("Meow!");
-            }
+function showImgGly(){
+    galleryModal.style.display = "flex";
+}
+function closeImgGly(){
+    galleryModal.style.display = "none";
 }
 
-cat.meow();
+/*for (var i = 0; i < galleryImg.length; i++){
+    galleryImg[i].setAttribute("src", "media\\gallery\\img1.jpg");
+}*/
+
+for (var i = 0; i < galleryImg.length; i++){
+    galleryImg[i].addEventListener("click", showImgGly);
+}
+
+galleryModalBtn.addEventListener("click", closeImgGly);
+
+
+//imgHolder.setAttribute("src", "media\\gitIcon.png");
+
+
+
+
+
+

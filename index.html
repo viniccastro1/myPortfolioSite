@@ -9,7 +9,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="modals.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -123,21 +123,38 @@
 
     </div>
 
-    <!--Modals: Form modal-->
-    <div class="modal" id="modal"> 
+    <!--Modals: Form Warn-->
+    <div class="modal" id="fwModal"> 
 
-        <div class="modalContent">
-            <div class="modalContent2">
+        <div class="modalWindow" id="fwModalWindow">
+
+            <button class="modalCloseBtn" id="fwModalButton">X</button>
+
+            <div class="modalContent">
                 <p>
                     Ops! Infelizmente não consigo validar esse form no GitHub Pages. 
                     <br> <br> 
                     Na verdade eu só adicionei ele pra você ver que eu consigo fazer formulários irados!
                 </p>
-                <button class="modalButton" id="modalButton">Beleza!</button>
             </div>
-        </div>
 
+        </div>
     </div>
+
+    <!--Modals: Gallery Image-->
+    <div class="modal" id="glyModal"> 
+
+        <div class="modalWindow" id="glyModalWindow">
+
+            <button class="modalCloseBtn" id="glyModalButton">X</button>
+
+            <div class="modalContent">
+                <img src="media\placeHolderIcon2.png" alt="" id="imgHolder">
+            </div>
+
+        </div>
+    </div>
+
 
     <!--JS File Declaration-->
     <script src="script.js"> </script>
