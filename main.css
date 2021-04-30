@@ -137,7 +137,7 @@ section{
 /*My work section*/
 .gridGallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2px;
 
@@ -162,6 +162,7 @@ section{
 .imgFromGallery:hover{
     transform: scale(1.05, 1.05);
     border: 1px solid black;
+    filter: brightness(1.5);
 }
 
 /*Contact section*/
