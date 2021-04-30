@@ -97,7 +97,7 @@ section{
     background-color: #1b1b22;
 
     box-shadow: 1em 1em black;
-    
+    max-width: 1000px;
 }
 
 #aside{
@@ -157,7 +157,6 @@ section{
 .imgFromGallery{
     height: 100%;
     width: 100%;
-
 }
 
 .imgFromGallery:hover{

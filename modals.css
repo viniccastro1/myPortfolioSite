@@ -19,8 +19,7 @@
 
     background-image: linear-gradient(to right, var(--color1), var(--color3));
 
-    height: 300px;
-    width: 600px;
+    width: 700px;
 
     padding-top: 1em;
     padding-bottom: 2em;
@@ -32,9 +31,9 @@
 
   .modalContent{
     background-color: var(--color5);
-    height: 100%;
+
     padding: 1em;
-    padding-bottom: 0em;
+    padding: 2em;
     text-align: center;
   }
 
@@ -59,20 +58,7 @@
     opacity: 50%;
   }
 
-  /*Form warn*/
-  #fwModalWindow
-  {
-    height: 300px;
-    width: 600px;
-  }
-
   /*Img gallery*/
-  #glyModalWindow
-  {
-    height: 500px;
-    width: 800px;
-  }
-
   #glyModal{
     display: none;
   }
@@ -80,12 +66,17 @@
 
   /*Respon.*/
   @media (max-width: 600px){
-    .modalContent{
-       width: 100%;
-       height: 550px;
+    #fwModalWindow
+    {
+      width: 100%;
+    }
+    #glyModalWindow{
+      width: 100%;
     }
 
-    .modalButton{
-      font-size: 1.5em;
+    .modalContent{
+      width: 100%;
     }
+
+
 }
