@@ -253,27 +253,28 @@ section{
         justify-content: space-evenly;
 
         padding-top: 0;
-   }
+    }
 
 
-   .aboutMeElement{
-    width: 90%;
+    .aboutMeElement{
+        width: 90%;
     }
 
     .aboutMeIcon{
         margin-bottom: 2em;
+        margin-top: 10px
     }
 
    .gridGallery{
         width: 100%;
-   }
+    }
    .gridGalleryElement{
        grid-column: 1/4;
-   }
+    }
 
    .contactForm{
     width: 100%;
-}
+    }
 
 
 }
