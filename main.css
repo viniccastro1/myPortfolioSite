@@ -222,14 +222,24 @@ section{
 }
 
 .asideIconDiv{
-    height: 80px;
-    width: 80px;
+    display: flex;
+    justify-content: center;
+
+    height: 120px;
+    width: 120px;
     margin: 3em 0 3em 0;
+
+    border-radius: 50%;
+    
+    background-color: black;
+
+    padding: 7px;
 }
 
 .asideIcon{
-    height: 100%;
-    width: 100%;
+    width: 90%;
+    height: 90%;
+    align-self: center;
 }
 
 /*Responsive (resizing) config*/
