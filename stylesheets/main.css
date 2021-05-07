@@ -8,6 +8,7 @@
     --color5: #111115;
     --color6: #1b1b22;
     --color7: #ffffff;
+    --color8: black;
     
     /*Img gallery: img size*/
     --imgSize: 13em;
@@ -237,6 +238,12 @@ section{
 }
 
 .asideIcon{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.asideLink{
     width: 90%;
     height: 90%;
     align-self: center;

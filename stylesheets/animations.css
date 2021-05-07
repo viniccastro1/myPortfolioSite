@@ -3,6 +3,7 @@
 @keyframes example{
     100%{
         transform: scale(1.7) rotate(20deg);
+        opacity: 0.2;
     }
 }
 
@@ -10,6 +11,7 @@
     animation-name: example;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+
 }
 
 

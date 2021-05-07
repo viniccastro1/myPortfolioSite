@@ -8,9 +8,10 @@
 
     <title>Document</title>
     
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="modals.css">
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/modals.css">
+    <link rel="stylesheet" href="stylesheets/animations.css">
+    <link rel="stylesheet" href="stylesheets/alerts.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -31,14 +32,14 @@
                 <h2> &gtSobre mim</h2>
                 <div class="flexContainer" id="aboutMeContainer">
                     <div class="aboutMeElement">
-                        <p>Olá, muito prazer! Me chamo Vinicius Castro, tenho 20 anos e vou me formar em junho pela UNIGRANRIO em Análise e Desenvolvimento de Sistemas! </p>
+                        <p>Olá, muito prazer! Me chamo Vinicius Castro, tenho <span id="age">20 anos</span> e vou me formar em junho pela UNIGRANRIO em Análise e Desenvolvimento de Sistemas!</p>
 
                         <img src="media\icons\aboutMe1.png" alt="" class="aboutMeIcon">
                         
                     </div>
 
                     <div class="aboutMeElement">
-                        <p>O front-end desse site inteiro foi todo feito por mim usando HTML, CSS e Javascript "vanilla" para mostrar algumas noções básicas de desenvolvimento do lado-cliente.</p>
+                        <p>O front-end desse site inteiro foi feito por mim usando HTML, CSS e Javascript "vanilla" para mostrar algumas noções básicas de desenvolvimento do lado-cliente.</p>
 
                         <img src="media\icons\aboutMe2.png" alt="" class="aboutMeIcon">
                     </div>
@@ -103,15 +104,20 @@
 
         <!-- Aside -->
         <div class="gridElement" id="aside">
+
             <div class="asideIconDiv">
-                <img src="media\icons\gitIcon.png" alt="" class="asideIcon">
+                <a href="https://github.com/viniccastro1" class="asideLink" target="_blank">
+                    <img src="media\icons\gitIcon.png" alt="" class="asideIcon">
+                </a>
             </div>
 
-            <div class="asideIconDiv"> 
-                <img src="media\icons\linkedinIcon.png" alt="" class="asideIcon">
+            <div class="asideIconDiv" class="asideLink"> 
+                <a href="https://www.linkedin.com/in/vinicius-castro-650184180/" target="_blank">
+                    <img src="media\icons\linkedinIcon.png" alt="" class="asideIcon">
+                </a>
             </div>
 
-            <div class="asideIconDiv"> 
+            <div class="asideIconDiv" class="asideLink" id="asideGitBtn"> 
                 <img src="media\icons\whatsappIcon.png" alt="" class="asideIcon">
             </div>
 
@@ -156,10 +162,23 @@
         </div>
     </div>
 
+    <!--Alert-->
+    <div class = "alert" id="alert">
+        <div class="alertBox">
+            <div id="alertBoxCloseBtn">X</div>
+            <div id="alertBoxTxtContent">
+                <p>Telefone de contato:</p>
+                <p>(21) 98564-5162</p>
+            </div>
+        </div>
+    </div>
 
-    <!--JS File Declaration-->
-    <script src="formWarn.js"> </script>
-    <script src="imgGallery.js"> </script>
+
+    <!--JS Files Declaration-->
+    <script src="scripts/formWarn.js"> </script>
+    <script src="scripts/imgGallery.js"> </script>
+    <script src="scripts/alerts.js" ></script>
+    <script src="scripts/ageUpdate.js"> </script>
 
 </body>
 </html>
