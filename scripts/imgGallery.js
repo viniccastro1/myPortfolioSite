@@ -4,6 +4,7 @@
 let modalImg = document.getElementById("imgHolder");
 let galleryImg = document.getElementsByClassName("imgFromGallery");
 let galleryModal = document.getElementById("glyModal");
+let glyModalWindow = document.getElementById("glyModalWindow");
 let galleryModalBtn = document.getElementById("glyModalButton");
 
 //img references
@@ -24,6 +25,13 @@ for (let i = 0; i < galleryImg.length; i++){
 }
 //adds listener to close gallery modal
 galleryModalBtn.addEventListener("click", function(){galleryModal.style.display = "none";});
+
+//Mouse out close
+let isOut = false;
+
+glyModalWindow.addEventListener("mouseover", function(){isOut = 'false'});
+glyModalWindow.addEventListener("mouseout", function(){isOut = 'true'});
+galleryModal.addEventListener("click", function(){if(isOut === 'true') {galleryModal.style.display = "none";}});
 
 //adds listeners on images to set modalImg
 for (let i = 0; i < galleryImg.length; i++){
