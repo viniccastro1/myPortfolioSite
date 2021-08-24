@@ -19,8 +19,6 @@
 
   background-image: linear-gradient(to right, var(--color1), var(--color3));
 
-  width: 700px;
-
   padding-bottom: 2em;
 
   margin: auto;
@@ -58,14 +56,27 @@
 }
 
 /*Img gallery*/
+
+#glyModalWindow{
+  display: inline-flex;
+  
+}
+
 #glyModal{
   display: none;
+
 }
 
 #imgHolder{
   border:0;
   border-radius: 12px;
 }
+
+/*Fw Modal*/
+#fwModalWindow
+  {
+    width: 60%;
+  }
 
 
 /*Respon.*/
@@ -76,6 +87,7 @@
   }
   #glyModalWindow{
     width: 100%;
+    margin-top: 0;
   }
 
   .modalContent{
@@ -84,6 +96,10 @@
 
   .modalCloseBtn{
     font-size: 4em;
+  }
+
+ #imgHolder{
+    width: 100%;
   }
 
 }

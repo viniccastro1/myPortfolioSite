@@ -19,6 +19,7 @@
 @keyframes gallery{
     100%{
         transform: scale(1.1, 1.1);
+        filter: brightness(0.8);
     }
 }
 

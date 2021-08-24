@@ -21,7 +21,7 @@ for (let i = 0; i < galleryImg.length; i++){
 
 //adds listeners to open gallery modal
 for (let i = 0; i < galleryImg.length; i++){
-    galleryImg[i].addEventListener("click", function(){galleryModal.style.display = "block"});
+    galleryImg[i].addEventListener("click", function(){galleryModal.style.display = "flex"});
 }
 //adds listener to close gallery modal
 galleryModalBtn.addEventListener("click", function(){galleryModal.style.display = "none";});
