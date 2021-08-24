@@ -1,4 +1,8 @@
 
+
+
+
+
 :root{
     /*Site color palette*/
     --color1: #C33764;
@@ -158,7 +162,7 @@ section{
 #myWorkSection>img{
     width: 70%;
     margin-bottom: 2em;
-    border-radius: 12px;
+    border-radius: 13px;
 }
 
 /*Media*/
