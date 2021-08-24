@@ -158,6 +158,7 @@ section{
     margin-bottom: 0.5em;
     text-indent: 1em;
     max-width: 600px;
+    text-align: center;
 }
 #myWorkSection>img{
     width: 70%;
