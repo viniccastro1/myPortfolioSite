@@ -151,11 +151,9 @@ section{
 
 #myWorkSection>p{
     margin-bottom: 1em;
-    text-indent: 1em;
     max-width: 600px;
-    text-align: center;
 }
-#myWorkSection>img{
+#myWorkSection>video{
     width: 70%;
     margin-bottom: 2em;
     border-radius: 13px;
@@ -174,8 +172,7 @@ section{
 }
 
 .gridGalleryElement{
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 #highlightImg{
@@ -183,6 +180,7 @@ section{
 }
 
 .imgFromGallery{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
