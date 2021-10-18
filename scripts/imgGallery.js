@@ -6,6 +6,7 @@ let galleryImg = document.getElementsByClassName("imgFromGallery");
 let galleryModal = document.getElementById("glyModal");
 let glyModalWindow = document.getElementById("glyModalWindow");
 let galleryModalBtn = document.getElementById("glyModalButton");
+let galleryVideo = document.getElementById('galleryVideo');
 
 //img references
 let imgReferences = ["media\\gallery\\img1.png",
@@ -35,5 +36,12 @@ galleryModal.addEventListener("click", function(){if(isOut === 'true') {galleryM
 
 //adds listeners on images to set modalImg
 for (let i = 0; i < galleryImg.length; i++){
-    galleryImg[i].addEventListener  ("click", function(){ modalImg.setAttribute("src", imgReferences[i])})
+    galleryImg[i].addEventListener("click", function(){ modalImg.setAttribute("src", imgReferences[i])});
+    galleryImg[i].addEventListener("click", function(){ galleryVideo.hidden = true});
+    galleryImg[i].addEventListener("click", function(){ modalImg.hidden = false});
+    screen.orientation.lock("landscape");
+
 }
+
+galleryImg[0].addEventListener("click", function(){ galleryVideo.hidden = false});
+galleryImg[0].addEventListener("click", function(){ modalImg.hidden = true});

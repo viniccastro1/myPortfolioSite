@@ -186,6 +186,7 @@ section{
     width: 100%;
 }
 
+
 /*Contact section*/
 #contactSection{
     display: flex;
@@ -289,6 +290,7 @@ section{
     align-self: center;
 }
 
+
 /*Responsive (resizing) config*/
 @media (max-width: 600px)
 {
@@ -361,6 +363,11 @@ section{
 
     .imgFromGallery{
         width: 100%;
+    }
+
+    #galleryVideo{
+        width: 100%;
+        height: 100%;
     }
 
     #myWorkSection>img{
