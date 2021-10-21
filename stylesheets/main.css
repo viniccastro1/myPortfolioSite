@@ -163,10 +163,14 @@ section{
 .ghLink{
     margin-bottom: 1em;
     margin-bottom: 2em;
-    color: #4f4f5a;
+    color: #ffffff;
     font-style: italic;
     font-size: 0.8em;
     font-weight: bold;
+    background-color: var(--color8);
+    padding: .2em .6em .2em .6em;
+    margin: .5em 0em 1em 0em;
+    border-radius: .3em;
 }
 
 /*Media*/
@@ -339,6 +343,10 @@ section{
         width: 90%;
     }
 
+    #myWorkSection>video{
+        width: 100%;
+    }
+
     .aboutMeIcon{
         margin-bottom: 2em;
         margin-top: 10px
@@ -354,6 +362,10 @@ section{
         width: 100%;
         max-width: 100%;
         margin-left: 0;
+    }
+
+    .ghLink{
+        font-size: 1.7em;
     }
 
 
